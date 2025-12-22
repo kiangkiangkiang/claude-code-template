@@ -8,10 +8,8 @@
       "WebFetch(domain:*)",
       "Bash(uv :*)",
       "Bash(mkdir:*)",
-      "Bash(git :*)"
-    ],
-    "ask": [
-      "Bash(git push:*)"
+      "Bash(git :*)",
+      "Bash(bash:*)"
     ],
     "deny": [
       "Bash(git push origin main)",
@@ -27,7 +25,10 @@
       "Bash(rm .claude-scripts/**)",
       "Write(.claude-scripts/**)",
       "Edit(.claude-scripts/**)",
-      "Bash(gh:*"
+      "Bash(gh:*)"
+    ],
+    "ask": [
+      "Bash(git push:*)"
     ]
   },
   "hooks": {
