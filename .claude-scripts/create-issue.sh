@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
-# 用法：bash scripts/create-issue.sh "Issue 標題" "Issue 內容"
+# 用法：
+#.   bash .claude-scripts/create-issue.sh <issue 標題> <issue 內容>
+#.   bash .claude-scripts/create-issue.sh "Issue 標題" "Issue 內容"
+
+
 set -euo pipefail
 
 # Load .env

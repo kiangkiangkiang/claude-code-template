@@ -12,3 +12,7 @@
 
 # 開發時
 1. 人類會說明目前要開發的項目，claude 要整理成一個 Story 成 md 檔案，(跟人類確認)， 然後根據這個 story.md 檔案，開發成 1~3 個 issue（太多很煩，限制一個 Story 最多 3 個 issue 可解決），然後根據 issue 開 branch（感覺開 branch 不用問欸），然後開發，然後開 PR，這段流程要想一下
+
+
+# 要先去生產 PAT 然後 auth login
+gh auth login --hostname git.linecorp.com
