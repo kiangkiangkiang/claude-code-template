@@ -10,7 +10,7 @@ curl -X GET \
   -H "Accept: application/vnd.github.v3+json" \
   https://api.github.com/app/installations
 
-curl -X POST \
-  -H "Authorization: Bearer $JWT_TOKEN" \
-  -H "Accept: application/vnd.github.v3+json" \
-  https://api.github.com/app/installations/8836/access_tokens
+# curl -X POST \
+#   -H "Authorization: Bearer $JWT_TOKEN" \
+#   -H "Accept: application/vnd.github.v3+json" \
+#   https://api.github.com/app/installations/8836/access_tokens

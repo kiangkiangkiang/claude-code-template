@@ -15,7 +15,7 @@ with open(file, "r") as key_file:
 payload = {
     "iat": int(time.time()),
     "exp": int(time.time()) + (10 * 60),  # 10 minutes
-    "iss": "1277",
+    "iss": 1277,
 }
 
 # Generate the JWT
