@@ -2,7 +2,7 @@ import jwt
 import time
  
 # Load your private key
-with open("~/Downloads/claude-code-github-app.2025-12-22.private-key.pem", "r") as key_file:
+with open("~/Downloads/claude-code-github-app.pem", "r") as key_file:
     private_key = key_file.read()
  
 # Define the payload
