@@ -88,7 +88,7 @@ your-project/
 
 This template implements a hierarchical instruction system:
 
-1. **System Instructions** (`.claude/docs/`)
+1. **System Instructions** (`.claude/CLAUDE.md`)
    - Global development processes and tool guidelines
    - Cross-project, stable workflows
    - Example: Git workflows, SDD methodology
