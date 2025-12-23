@@ -9,7 +9,7 @@
       "Bash(uv :*)",
       "Bash(mkdir:*)",
       "Bash(git :*)",
-      "Bash(bash:*)"
+      "Bash(bash .claude/tools/git/*)"
     ],
     "deny": [
       "Bash(git push origin main)",
@@ -20,12 +20,11 @@
       "Read(./.env)",
       "Read(./.env.*)",
       "Read(./secrets/**)",
-      "Bash(rm .claude-scripts/*)",
-      "Bash(rm -.* .claude-scripts/)",
-      "Bash(rm .claude-scripts/**)",
-      "Write(.claude-scripts/**)",
-      "Edit(.claude-scripts/**)",
-      "Bash(gh:*)"
+      "Bash(rm .claude/tools/git/*)",
+      "Bash(rm -.* .claude/tools/git/)",
+      "Bash(rm .claude/tools/git/**)",
+      "Write(.claude/tools/git/**)",
+      "Edit(.claude/tools/git/**)"
     ],
     "ask": [
       "Bash(git push:*)"

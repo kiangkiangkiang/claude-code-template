@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # 用法
-#.   bash .claude-scripts/create-branch-from-issue.sh <issue-id> 
-#.   bash .claude-scripts/create-branch-from-issue.sh 1 
+#.   bash .claude/tools/git/create-branch-from-issue.sh <issue-id> 
+#.   bash .claude/tools/git/create-branch-from-issue.sh 1 
 set -euo pipefail
 
 # Load .env if exists

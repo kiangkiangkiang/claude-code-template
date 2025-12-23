@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # 用法：
-#.   bash .claude-scripts/create-issue.sh <issue 標題> <issue 內容>
-#.   bash .claude-scripts/create-issue.sh "Issue 標題" "Issue 內容"
+#.   bash .claude/tools/git/create-issue.sh <issue 標題> <issue 內容>
+#.   bash .claude/tools/git/create-issue.sh "Issue 標題" "Issue 內容"
 
 
 set -euo pipefail
@@ -44,7 +44,7 @@ echo "  Repo: $GITHUB_REPO_NAME"
 echo "  API:  $GITHUB_API_BASE"
 
 # === Step 1: 取得 Access Token ===
-ACCESS_TOKEN=$(./scripts/create-access-token.sh)
+ACCESS_TOKEN=$(.claude/scripts/create-access-token.sh)
 if [ -z "$ACCESS_TOKEN" ]; then
   echo "❌ Failed to get token"
   exit 1

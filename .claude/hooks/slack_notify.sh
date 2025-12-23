@@ -1,6 +1,12 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+if [ -f ".env" ]; then
+  set -a
+  source .env
+  set +a
+fi
+
 : "${SLACK_WEBHOOK_URL:?Missing SLACK_WEBHOOK_URL}"
 : "${SLACK_MENTION_UID:?Missing SLACK_MENTION_UID}"
 

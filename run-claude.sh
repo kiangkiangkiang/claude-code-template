@@ -5,4 +5,6 @@ if [ -f ".env" ]; then
 fi
 
 
+export SHELL=/bin/zsh
+
 claude

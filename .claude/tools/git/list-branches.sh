@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# 用法：bash .claude-scripts/list-branches.sh
+# 用法：bash .claude/tools/git/list-branches.sh
 
 # Load .env
 if [ -f ".env" ]; then

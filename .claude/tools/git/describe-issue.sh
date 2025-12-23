@@ -2,8 +2,8 @@
 set -euo pipefail
 
 # 用法：
-#.   bash .claude-scripts/describe-issue.sh <issue-id>
-#.   bash .claude-scripts/describe-issue.sh 1
+#.   bash .claude/tools/git/describe-issue.sh <issue-id>
+#.   bash .claude/tools/git/describe-issue.sh 1
 
 # Load .env
 if [ -f ".env" ]; then

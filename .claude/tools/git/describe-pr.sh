@@ -2,8 +2,8 @@
 set -euo pipefail
 
 # 用法：
-#   bash .claude-scripts/describe-pr.sh <pr-number>
-#   bash .claude-scripts/describe-pr.sh 5
+#   bash .claude/tools/git/describe-pr.sh <pr-number>
+#   bash .claude/tools/git/describe-pr.sh 5
 
 # Load .env
 if [ -f ".env" ]; then

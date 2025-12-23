@@ -1,26 +1,3 @@
-1. 要有開 issue 的能力，然後要開的時候要 slack 問，等待一段時間，說 OK 就可以開，沒回應的話就不開，可能要用 python 把等待回應的過程寫進去，感覺也不用，只要設定成 ask hook 就好，ask 裡面有 BAST("bash .claude/tools/github) 啥的，還沒很清楚，要再想想
-2. 要有開 branch from issue 的能力
-3. 要有開 PR 的能力
-
-未來的開發模式：
-
-# init 時
-1. 人類會啟用 `claude` 然後說明專案規劃，基本的 CICD 規範應該要寫一版在某個地方，抽象出來，變成 基本專案管理知識＋這個專案的規劃
-2. 都討論好了後建立 CLAUDE.md 檔案
-
-之後開始討論專案開發規劃
-
-# 開發時
-1. 人類會說明目前要開發的項目，claude 要整理成一個 Story 成 md 檔案，(跟人類確認)， 然後根據這個 story.md 檔案，開發成 1~3 個 issue（太多很煩，限制一個 Story 最多 3 個 issue 可解決），然後根據 issue 開 branch（感覺開 branch 不用問欸），然後開發，然後開 PR，這段流程要想一下
-
-
-# 要先去生產 PAT 然後 auth login
-gh auth login --hostname git.linecorp.com
-
-
-.claude/tools/github -> .claude-tools 並且增加子目錄，還有 README.md
-
-
 # CLAUDE.md
 CLAUDE.md 內應該要有詳細的專案管理概念：
 1. 善用使用者給的工具，使用者會把工具放在 .claude/tools 內，例如 .claude/tools/git 你可以查看 README.md 知道這個資料夾下工具的介紹
@@ -39,4 +16,4 @@ CLAUDE.md 內應該要有詳細的專案管理概念：
 
 你會一直接收到使用者的任務，這些任務通常很抽象，你要根據使用者給的任務，拆成多個 issue (一個 issue 一個 task，issue 內容要列出這個 issue 想解決的問題)，共同解決這個任務，並且每次接到需求，都要更新 .claude/docs/TASK.md 表示當前需求（當然這個檔案也要被敘述在 CLAUDE.md 內），這個 TASK.md 就是記錄使用者當下的需求，以及你根據需求創建對應的 issue / branch，換句話說，每次啟動時，你都要看這個檔案的內容，因為這個檔案記錄著你的開發狀況，進度（當然可以看 git log 也行），隨時更新這個檔案，當需求解決，這個檔案理所當然要清空，有新的需求，就直接取代成新的需求即可
 
-舉個例子，啟動時，你會先看 TASK.md github issue，看看有沒有上次沒進行完的需求，當使用者跟你講任務，你會判斷是否跟上次有相關，如果有，就會接續做，如果沒有，就會直接更新需求然後創建對應的 issue 創建 branch 開發，每次的進度都會記錄在 git commit 內，有比較顯著的結果時，例如完成任務，就會記錄在 TASK.md 內，然後開 PR，一個 branch 一個 branch 解決。使用者在過程中跟你討論的結果，你都會記錄在 TASK.md 內，如果收斂出比較明顯的使用者喜好或是全局觀，就會記錄在 PROJECT.md 內。
+舉個例子，啟動時，你會先看 TASK.md github issue，看看有沒有上次沒進行完的需求，當使用者跟你講任務，你會判斷是否跟上次有相關，如果有，就會接續做，如果沒有，就會直接更新需求然後創建對應的 issue 創建 branch 開發，每次的進度都會記錄在 git commit 內，

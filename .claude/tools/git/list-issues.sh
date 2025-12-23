@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# 用法：bash .claude-scripts/list-issues.sh
+# 用法：bash .claude/tools/git/list-issues.sh
 
 # Load .env
 if [ -f ".env" ]; then

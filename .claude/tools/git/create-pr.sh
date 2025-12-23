@@ -2,8 +2,8 @@
 set -euo pipefail
 
 # 用法:
-#   bash .claude-scripts/create-pr.sh <source-branch> "<body>"
-#   bash .claude-scripts/create-pr.sh fix-issue-1 "測試 PR 的 Body"
+#   bash .claude/tools/git/create-pr.sh <source-branch> "<body>"
+#   bash .claude/tools/git/create-pr.sh fix-issue-1 "測試 PR 的 Body"
 
 # Load .env
 if [ -f ".env" ]; then

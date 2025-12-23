@@ -2,7 +2,7 @@
 set -euo pipefail
 
 # 用法：
-#   bash .claude-scripts/list-pr.sh
+#   bash .claude/tools/git/list-pr.sh
 
 # Load .env if exists
 if [ -f ".env" ]; then
